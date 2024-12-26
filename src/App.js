@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components/native';
 import { theme } from './theme';
+import { StatusBar } from 'react-native';
 
 const Container = styled.SafeAreaView`
 flex: 1;
@@ -23,6 +24,10 @@ export default function App() {
     return (
         <ThemeProvider theme={theme}>
             <Container>
+                <StatusBar
+                    barStyle="light-content" //dark-content
+                    backgroundColor={theme.background}
+                />
                 <Title>TODO LIST</Title>
             </Container>
         </ThemeProvider>
