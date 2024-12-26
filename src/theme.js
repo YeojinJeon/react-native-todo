@@ -1,5 +1,6 @@
 export const theme = {
-    background: 'green',
+    background: 'darkgray',
     main: 'yellow',
     text: 'pink',
+    itemBackground: 'gray',
 };
